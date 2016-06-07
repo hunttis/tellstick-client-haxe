@@ -22,7 +22,8 @@ I've tried installing haxe with homebrew on my mac and it always ends up in a we
 5. `haxelib run lime setup` (I recommend you install the lime command)
 6. `haxelib install flixel`
 7. `haxelib install rest-client`
-8. Make one of the builds, for example: `lime build cpp` (build native OS application, will take a while the first time) or perhaps `lime build html5` to make a javascript build to run in the browser.
+8. Change the SERVER_ADDRESS in Tellstick.hx to point wherever your tellstick remote server is.
+9. Make one of the builds, for example: `lime build cpp` (build native OS application, will *take a while* the first time) or perhaps `lime build html5` to make a javascript build to run in the browser.
 
 Making a native ios app requires xcode and apple dev licence. Making an android build requires android devkit.
 
