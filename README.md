@@ -8,7 +8,7 @@ Using the client requires using the remotestick server: https://github.com/joril
 
 If you're curious about how all this is set up, read up on it here: http://polarcoder.blogspot.fi/2015/10/diy-home-automation-v1.html (there's also part 2 if you're interested in tuning it further)
 
-# What is it?
+# What is this then?
 It's an alternative to the tellstick server web pages. It can be compiled to native applications for the android and ios devices. Native apps start much faster than a browser and then directing that browser to a web page.
 
 # How to set up the compilation.
