@@ -13,10 +13,7 @@ It's an alternative to the tellstick server web pages. It can be compiled to nat
 
 # How to set up the compilation.
 1. clone or download this repo
-2. Install Haxe from http://haxe.org
-
-I've tried installing haxe with homebrew on my mac and it always ends up in a weird state, so I recommend installing it from the installer or the binaries on the haxe site. I trust you're able to do that on your operating system.
-
+2. Install Haxe from [http://haxe.org]. I've tried installing haxe with homebrew on my mac and it always ends up in a weird state, so I recommend installing it from the installer or the binaries on the haxe site. I trust you're able to do that on your operating system.
 3. run `haxelib setup` from the terminal and select a path where haxe can download it's libraries
 4. `haxelib install lime`
 5. `haxelib run lime setup` (I recommend you install the lime command)
