@@ -1,0 +1,15 @@
+{
+	"haxe.displayConfigurations": [
+		["export/mac64/neko/haxe/debug.hxml"],
+		["export/mac64/neko/haxe/release.hxml"],
+	],
+	"haxe.diagnosticsPathFilter": "${workspaceRoot}/source",
+	"search.exclude": {
+		"export/**/**.hx": true
+	},
+	"codedox": {
+		"commentdescription": "\n",
+		"paramFormat": "@param   ${name} ",
+		"returnFormat": "@return  ${type}"
+	}
+}
