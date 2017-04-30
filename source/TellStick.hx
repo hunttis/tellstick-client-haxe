@@ -5,15 +5,15 @@ import haxe.Json;
 
 class TellStick {
 
-    private static inline var SERVER_ADDRESS: String = "http://192.168.1.33:8422";
+    private var serverAddress: String;
     private var devices: TellstickDeviceList;
 
-    public function new():Void {
-
+    public function new(address: String, port: String):Void {
+        serverAddress = "http://" + address + ":" + port;
     }
 
     private function getBaseCommand(): String{
-        return SERVER_ADDRESS + "/devices";
+        return serverAddress + "/devices";
     }
 
     public function refreshDevices(): Void{
