@@ -17,8 +17,7 @@ enum ProgramState {
     Ready;
 }
 
-class MenuState extends FlxState
-{
+class MenuState extends FlxState {
 
 	private var jsonResponse: String;
 	private var state: ProgramState = Init;

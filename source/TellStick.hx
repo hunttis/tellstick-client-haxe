@@ -16,12 +16,17 @@ class TellStick {
         return serverAddress + "/devices";
     }
 
+    public function setCachedDevices(cachedDevices: Array<TellstickDevice>): Void {
+        devices = { devices: cachedDevices };
+    }
+
     public function refreshDevices(): Void{
         RestClient.getAsync(
             getBaseCommand(),
             function (result) {
                 trace("Refreshed devices!");
                 devices = Json.parse(result);
+                trace("Got " + devices.devices.length + " devices");
             }
         );
     }
@@ -83,7 +88,12 @@ class TellStick {
     }
 
     public function getDevices(): Array<TellstickDevice> {
-        return devices.devices;
+
+        if (devices != null && devices.devices != null) {
+            return devices.devices;
+        }
+        trace("Returning empty array, because: " + devices == null);
+        return new Array<TellstickDevice>();
     }
 
     private function sendRestCommand(command: String, refreshDevicesToo: Bool){
